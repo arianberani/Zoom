@@ -1,0 +1,37 @@
+<div class="portfolio">
+  <div class="container">
+    <div class='portfolio-wrapper'>
+
+
+        <div class='column' *ngFor="let item of portfolio" (click)="goToPortfolioDitails(item.id)" >
+          <div class='green-column' >
+            <div class="images-portfolio">
+              <img class="img-portofolio"  src="assets/images/images (1).jfif">
+            </div>
+            <h4 class="title-portfolio">{{item.title}}</h4>
+            <p class="text-portfolio"> {{item.text}}</p>
+          </div>
+
+       <!-- <div class='column'>
+          <div class='green-column'>
+           <div class="images-portfolio">
+             <img _ngcontent-abe-c11="" alt="" class="img-portofolio"  src="assets/images/images (1).jfif">
+           </div>
+            <h4 class="title-portfolio">Title</h4>
+            <p class="text-portfolio"> Eum cu tantas legere complectitur, hinc utamur ea eaum cu tantas legere complectitur1.</p>
+          </div>
+        </div>
+        <div class='column'>
+          <div class='green-column'>
+            <div class="images-portfolio">
+              <img _ngcontent-abe-c11="" alt="" class="img-portofolio"  src="assets/images/images (1).jfif">
+            </div>
+            <h4 class="title-portfolio">Title</h4>
+            <p class="text-portfolio"> Eum cu tantas legere complectitur, hinc utamur ea eaum cu tantas legere complectitur1.</p>
+          </div>-->
+        <!--</div>-->
+      </div>
+    </div>
+
+    </div>
+</div>

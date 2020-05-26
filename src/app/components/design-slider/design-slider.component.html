@@ -1,0 +1,88 @@
+<div class="design-slider">
+  <div class="container">
+    <div class="design-title-p">
+      <h1 class="design-title-slider">The Design That Likes To Say Yes.</h1>
+      <p class="design-p-slider">Eum cu tantas legere complectitur, hinc utamur ea eam. Eum patrioque mnesarchum eu,
+        diam erant convenire et vis. Et essent evertitur sea, vis cu ubique referrentur, sed eu dicant expetendis.</p>
+      <div class="menu-design">
+        <ul class="menu-ul-design">
+          <li class="menu-li-design" [ngClass]="{'active': filter === ''}" (click)="onFilterClick('')"><span id="menu-design-active">ALL</span></li>
+          <li class="menu-li-design" [ngClass]="{'active': filter === 'WEB'}" (click)="onFilterClick('WEB')">WEB</li>
+          <li class="menu-li-design" [ngClass]="{'active': filter === 'PHOTOGRAPHY'}" (click)="onFilterClick('PHOTOGRAPHY')">PHOTOGRAPHY</li>
+          <li class="menu-li-design" [ngClass]="{'active': filter === 'GRAPHIC DESIGN'}" (click)="onFilterClick('GRAPHIC DESIGN')">GRAPHIC DESIGN</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='some-page-wrapper'>
+      <div class='column-slider-design'>
+        <div class='column' *ngFor="let items of categories">
+          <div class='black-column'>
+          </div>
+          <div class='column-white'>
+            <h4 class="column-design-h4">{{ items.name }} </h4>
+            <p class="column-design-p">{{items.text}}</p>
+          </div>
+        </div>
+
+       <!--
+<button-->
+<!--          class="show-more"-->
+<!--          *ngIf="!showAll"-->
+<!--          (click)="showMoreItems()">-->
+<!--          <img id="img-design-slider" src="assets/images/Arrow Down.png" alt=""/>-->
+<!--        </button>-->
+<!--        <button-->
+<!--          class="show-less"-->
+<!--          *ngIf="showAll"-->
+<!--          (click)="showLessItems()">-->
+<!--          <img id="img-design-slider" src="assets/images/Arrow Down.png" alt=""/>-->
+<!--        </button>-->
+      </div>
+
+    </div>
+    <div class="button-slider">
+      <button (click)="triggerMoreOrLess()"><img class="show-more-less" [ngClass]="{'more': !showAll, 'less': showAll}" src="assets/images/Arrow Down.png"></button>
+    </div>
+    <!-- <div class='some-page-wrapper'>
+          <div class='column-slider-design' id="listFood">
+            <div class='column'>
+              <div class='black-column'>
+
+              </div>
+              <div class='column-white'>
+                  <h4 class="column-design-h4">WEB DESIGN </h4>
+                <p class="column-design-p">Eum cu tantas legere complectitur, hinc utamur ea eaum cu tantas legere complectit</p>
+
+              </div>
+            </div>
+            <div class='column'>
+              <div class='black-column'>
+              </div>
+              <div class='column-white'>
+                      <h4 class="column-design-h4">PHOTOGRAPHY</h4>
+                <p class="column-design-p">Eum cu tantas legere complectitur, hinc utamur ea eaum cu tantas legere complectit</p>
+
+              </div>
+            </div>
+           <div class='column'>
+              <div class='black-column'>
+
+              </div>
+              <div class='column-white'>
+                      <h4 class="column-design-h4">PROGRAMMING</h4>
+                <p class="column-design-p">Eum cu tantas legere complectitur, hinc utamur ea eaum cu tantas legere complectit</p>
+
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div> -->
+    <!-- <div class="images-design-slider">
+          <img id="img-design-slider" src="assets/images/Arrow Down.png" alt="" />
+    </div> -->
+  </div>
+</div>

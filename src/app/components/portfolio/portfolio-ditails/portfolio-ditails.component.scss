@@ -1,0 +1,22 @@
+
+  .portfolio-details{
+    min-height: 100vh;
+    background: linear-gradient(to right, #2e2551, #3d50ae);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+.images-details-portofolio{
+  width: 500px;
+}
+  p.portfolio-p {
+    width: 400px;
+    margin: auto;
+    color: white;
+    padding-top: 14px;
+  }
+  h1.h1-portfolio {
+    padding-top: 20px;
+    color: white;
+  }

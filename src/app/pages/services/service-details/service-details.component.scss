@@ -1,0 +1,17 @@
+.service-details{
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left, #b8b5b5, #f8f2f2);
+}
+
+h1.h1-services {
+  padding-top: 20px;
+}
+p.service-p {
+  width: 400px;
+  margin: auto;
+  padding-top: 15px;
+}

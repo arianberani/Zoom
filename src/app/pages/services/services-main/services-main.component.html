@@ -1,0 +1,23 @@
+<div class='page-service'>
+    <div class="container ">
+      <div class=' service'>
+
+        <div class="column-wrapper">
+          <div class='column' *ngFor="let item of services" (click)="goToServiceDetails(item.id)">
+            <div class='column-service'>
+              <img id="img" src="assets/images/Composite-Path.gif" alt="" />
+              <h3 class="service-h3">{{item.title}}</h3>
+              <p class="service-p">{{item.text}}</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="button-service"><button class="service-button">NEED SERVICE?</button>
+        </div>
+
+      </div>
+
+    </div>
+</div>
+
+<!--<router-outlet></router-outlet>-->

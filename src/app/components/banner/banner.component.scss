@@ -1,0 +1,55 @@
+.banner{
+    
+    background: url(../../../assets/images/back-img.jpg);
+    height: 700px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-position: center;
+}
+.banner-title {
+    padding-top: 16rem;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 60px;
+}
+.banner-button {
+    margin-top: 3rem;
+    width: 245px;
+    height: 70px;
+    background: linear-gradient(to bottom, #ff6754, #ff3858 100%);
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+color: #ffffff;
+font-family: "Roboto";
+font-weight: 500;
+   
+}
+
+
+
+
+
+@media (max-width: 767.98px) {
+    .banner-title{
+        font-size: 2rem;
+        padding-top: 4rem;
+    }
+  }
+
+
+@media (max-width: 991.98px) { 
+    .banner{
+        height: auto;
+    }
+    .banner-title--button{
+        padding: 3rem;
+        padding-left: 0;
+    padding-right: 0;
+    }
+ }
+
+@media (max-width: 1199.98px) {  }

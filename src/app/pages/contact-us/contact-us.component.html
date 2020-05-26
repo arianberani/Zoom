@@ -1,0 +1,40 @@
+<div class="contact-us">
+    <div class="container">
+           <div class="title-and-p">
+                <h1 class="title-contact">Contact Us</h1>
+                <p class="contact-p">Eum cu tantas legere complectitur, hinc utamur ea eam. Eum patrioque mnesarchum eu, diam erant convenire et vis. Et essent evertitur sea, vis cu ubique referrentur, sed eu dicant expetendis.</p>
+            </div>
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                    <div class="form-row">
+                      <div class="form-group col-6 "  >
+                        <input type="text" formControlName="firstName" placeholder="Name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+                        <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                          <div *ngIf="f.firstName.errors.required">First Name is required</div>
+                        </div>
+                      </div>
+                      <div class="form-group col-6">
+
+                        <input type="text" formControlName="email" placeholder="Email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                          <div *ngIf="f.email.errors.required">Email is required</div>
+                          <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                        </div>
+                    </div>
+                    </div>
+              <div class="form-group col-13">
+
+                <input type="text" formControlName="email" placeholder="Yor message here" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                  <div *ngIf="f.email.errors.required">Yor message here</div>
+                  <div *ngIf="f.email.errors.email">Yor message heres</div>
+                </div>
+              </div>
+              <div class="text-end">
+                <button class="button-contact ">Send Message</button>
+
+              </div>
+                  </form>
+
+
+     </div>
+ </div>
